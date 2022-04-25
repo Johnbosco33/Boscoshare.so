@@ -1,0 +1,38 @@
+// SPDX-License-Identifier: GPL-3.0x
+
+pragma solidity >=0.7.0 <0.9.0;
+
+contract BoscoShare{
+
+    string name;
+    uint16 age;
+    string location;
+
+    //write a name to the blockchain
+    //get the name from the blockchain
+
+    function write(string memory Alexis, uint16, string memory Enugu) public{
+        name=Alexis;
+        age=20;
+        location=Enugu;
+    }
+
+    function getName() public view returns(string memory){
+        return name;
+    }
+
+    //write an age to the blockchain
+    //get the age from the blockchain
+
+    function getAge() public view returns(uint16){
+        return age;
+    }
+
+    //write a location to the blockchain
+    //get the location from the blockchain
+
+    function getLocation() public view returns(string memory){
+        return location;
+    }
+
+}
